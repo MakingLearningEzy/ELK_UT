@@ -1,9 +1,13 @@
 # what we need to create the application 
 
 folder location where CSV will arrive .
+
 filebeat software -> 6.8 , i am  using 
+
 logstash ->  6.8 , i am  using
+
 elastic search ->  6.8 , i am  using
+
 kibana -> 6.8 , i am  using
 
 
