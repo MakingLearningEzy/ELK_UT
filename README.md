@@ -1,4 +1,5 @@
-** files and command having paths from my local system so when you use in your system please update paths to your local path .
+# NOTE
+files and command having paths from my local system so when you use in your system please update paths to your local path .
 
 
 # ELK Application data flow 
