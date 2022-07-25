@@ -1,3 +1,5 @@
+# Please read this first *******
+
 # what we need to create the application 
 
 folder location where CSV will arrive .
@@ -19,7 +21,7 @@ files and command having paths from my local system so when you use in your syst
 
 CSV Files --> filebeat --> logstash --> elastic search --> Kibana
 
-# Please read this first 
+# config details 
 
 This branch contains all below configuration files used during demo of CSV data loading to elastic .
 
