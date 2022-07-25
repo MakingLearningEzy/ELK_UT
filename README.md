@@ -1,3 +1,10 @@
+** files and command having paths from my local system so when you use in your system please update paths to your local path .
+
+
+# ELK Application data flow 
+
+CSV Files --> filebeat --> logstash --> elastic search --> Kibana
+
 # Please read this first 
 
 This branch contains all below configuration files used during demo of CSV data loading to elastic .
@@ -9,8 +16,6 @@ filebeat_test_csv.yml   -*-> use in your filebeat and start filebeat with this c
 test.csv --> this is sample csv data .
 
 
-
-
 #  COMMANDS USED
 
 >> to start logstash
@@ -20,4 +25,13 @@ logstash.bat -f D:\microservices_project\kibana_setup\6.8\logstash\logstash-6.8.
 >> to start filebeat
 
 filebeat.exe -e -c filebeat_test_csv.yml
+
+to start elastic search
+
+>> elasticsearch.bat
+
+to start kibana
+
+>> kibana.bat
+
 
