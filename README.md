@@ -1,3 +1,12 @@
+# what we need to create the application 
+
+folder location where CSV will arrive .
+filebeat software -> 6.8 , i am  using 
+logstash ->  6.8 , i am  using
+elastic search ->  6.8 , i am  using
+kibana -> 6.8 , i am  using
+
+
 # NOTE
 files and command having paths from my local system so when you use in your system please update paths to your local path .
 
