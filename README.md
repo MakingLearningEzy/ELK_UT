@@ -11,7 +11,7 @@
 
 >> to start logstash
 
-logstash.bat -f <config file name >
+logstash.bat -f CONFIG_FILE
 
 for mine -
 
