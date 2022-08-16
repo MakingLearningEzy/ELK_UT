@@ -5,10 +5,7 @@ input {
     hosts => '127.0.0.1:9200'
     index => 'demo_csv'
     query => '{ "sort": [ "_id" ]}'
-    size => 500
-    scroll => '5m'
-    docinfo => false
-    #schedule => "/2 * * * *"
+    schedule => "/2 * * * *"
     add_field => { "concatedValue" => "%{[name]} | %{[publisher]}"}
   }
 }
