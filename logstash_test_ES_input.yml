@@ -6,7 +6,6 @@ input {
     index => 'demo_csv'
     query => '{ "sort": [ "_id" ]}'
     schedule => "/2 * * * *"
-    add_field => { "concatedValue" => "%{[name]} | %{[publisher]}"}
   }
 }
 
