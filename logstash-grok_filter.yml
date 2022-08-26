@@ -1,0 +1,22 @@
+input {
+  beats {
+    port => 5045
+  }
+}
+
+filter {
+
+   grok {
+   match=>{"message"=>["%{DATESTAMP:Date} %{LOGLEVEL:LOGLEVEL} %{IP:ip} %{GREEDYDATA:data}","%{DATESTAMP:Date1} %{LOGLEVEL:LOGLEVEL1} %{GREEDYDATA:data1}","%{DATESTAMP:Date2} %{GREEDYDATA:data2}"]
+   }
+   }
+   
+  mutate {
+        remove_field => ["offset", "prospector","@version","source","host","[beat][hostname]","[beat][name]","[beat][version]","@timestamp","input","beat","log"]
+      }
+}
+
+output {
+
+  stdout{}
+}

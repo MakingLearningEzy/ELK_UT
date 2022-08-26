@@ -1,17 +1,29 @@
-# Please read this first 
+# read this 
 
-1 .Use the logstash config file present in this branch and edit ( index , host etc )  config as per your local set up . and start the logstash (commad given below )
+Grok Filter in logstash
 
-2. start the elastic seach .
+to parse the unstructureed data like text ,log etc . 
+grok filter uses GROK pattern to do the parsing .
 
-3 .  start the kibana .
+
+data flow 
+
+log file --> filebeat --> logstash --> console
 
 
 #  COMMANDS USED
 
+>> to start filebeat
+
+filebeat.exe -e -c FILEBEAT_CONFIG_FILE
+
+for mine
+
+filebeat.exe -e -c filebeat_test_grok.yml
+
 >> to start logstash
 
-logstash.bat -f <config file name >
+logstash.bat -f _LOGSTASH_CONFIG_FILE
 
 for mine -
 
