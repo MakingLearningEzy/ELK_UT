@@ -1,32 +1,17 @@
-# read this 
+###### commands to run software  ###############
 
-Grok Filter in logstash
+## logstash
 
-to parse the unstructureed data like text ,log etc . 
-grok filter uses GROK pattern to do the parsing .
+logstash.bat -f D:\microservices_project\kibana_setup\6.8\logstash\logstash-6.8.0_book\config\logstash_test_json.yml
 
+## filebeat
 
-data flow 
+filebeat.exe -e -c filebeat_test_json.yml
 
-log file --> filebeat --> logstash --> console
+## elastic search
 
+elasticsearch.bat
 
-#  COMMANDS USED
+## kibana
 
->> to start filebeat
-
-filebeat.exe -e -c FILEBEAT_CONFIG_FILE
-
-for mine
-
-filebeat.exe -e -c filebeat_test_grok.yml
-
->> to start logstash
-
-logstash.bat -f _LOGSTASH_CONFIG_FILE
-
-for mine -
-
-logstash.bat -f D:\microservices_project\kibana_setup\6.8\logstash\logstash-6.8.0_book\config\logstash_test_mutation.yml
-
-
+kibana.bat
