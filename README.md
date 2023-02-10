@@ -6,7 +6,7 @@ filebeat.exe -e -c <FILEBEAT_CONFIG_FILE>
 
 ex.
 
-filebeat.exe -e -c filebeat_test_grok.yml
+filebeat.exe -e -c filebeat_test_csv.yml
 
 # to start logstash
 
