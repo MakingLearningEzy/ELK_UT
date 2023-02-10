@@ -7,3 +7,4 @@ filebeat.inputs:
 output:
   logstash:
     hosts: ["localhost:5045"]
+    
