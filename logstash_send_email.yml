@@ -48,7 +48,7 @@ output {
       port => 587
       username => 'makinglearnngezy@gmail.com'
       use_tls => true
-      password => 'csdyrvsscipgfjny'
+      password => '****************'
     #}
   }
   
