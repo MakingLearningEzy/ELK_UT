@@ -33,24 +33,21 @@ columns => ["bookId","name","subject","publisher","author"]
 }
 }
 
-#send the output to the destination here it is console .
-output {
+#send the output to the destination here it is console ans S3 .
 
-     stdout{}
-
-    # "shouldmail" in [tags] {
-    email {
-      to => 'makinglearnngezy@gmail.com'
-      from => 'logstashTest@example.com'
-      subject => 'logstash Alert'
-      body => "testing integration"
-      address => 'smtp.gmail.com'
-      port => 587
-      username => 'makinglearnngezy@gmail.com'
-      use_tls => true
-      password => 'csdyrvsscipgfjny'
-    #}
-  }
-  
- 
-}
+ output {
+      stdout{}
+      s3 {
+        access_key_id => "**************"
+        secret_access_key => "**************"
+        region => "us-east-1"
+        bucket => "makinglearnngezy1"
+        additional_settings => {
+          "force_path_style" => true
+          "follow_redirects" => false
+        }
+        codec => "json_lines"
+        temporary_directory => "D:\microservices_project\kibana_setup\6.8\logstash\s3_files"
+        size_file => 2048 
+      }
+    }
