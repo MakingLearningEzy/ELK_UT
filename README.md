@@ -15,4 +15,4 @@ logstash.bat -f <LOGSTASH_CONFIG_FILE>
 
 ex.
 
-logstash.bat -f D:\microservices_project\kibana_setup\6.8\logstash\logstash-6.8.0_book\config\logstash_send_s3.yml
+logstash.bat -f D:\microservices_project\kibana_setup\6.8\logstash\logstash-6.8.0_book\config\logstash_send_sns.yml
