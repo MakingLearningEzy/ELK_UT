@@ -1,18 +1,25 @@
-## COMMANDS USED
+## COMMANDS USED 
 
-# to start filebeat
+-->  run command in the base folder of metricbeat .
 
-filebeat.exe -e -c <FILEBEAT_CONFIG_FILE>
+# to start metricbeat 
 
-ex.
-
-filebeat.exe -e -c filebeat_test_csv.yml
-
-
-# to start logstash
-
-logstash.bat -f <LOGSTASH_CONFIG_FILE>
+metricbeat -e -c <metricbeat config file>
 
 ex.
 
-logstash.bat -f D:\microservices_project\kibana_setup\6.8\logstash\logstash-6.8.0_book\config\logstash_send_sqs.yml
+metricbeat -e -c metricbeat_test.yml
+
+
+# to find all modules
+
+metricbeat modules list
+
+# to enable module in metricbeat
+
+metricbeat modules enable <modulename>
+
+
+# to disable module in metricbeat
+
+metricbeat modules disable <modulename>
